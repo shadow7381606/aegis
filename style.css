@@ -1,0 +1,156 @@
+@import './styles/colors.css';
+
+ /* --------reset css */
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: inherit;
+ }
+html,body{
+    height: 100vh;
+     max-height: 100vh;
+     width: 100vw;
+
+}
+body{ 
+     background-color: #7D0505;
+     height: 100vh;
+     max-height: 100vh;
+     width: 100vw;
+     max-width: 100vw; 
+} 
+
+head { 
+    display: flex;
+    width: 100%;
+}
+.main_navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+
+.eagisbank {
+    color: #FFF ;
+    font-size: 1rem;
+    padding-left: 15px;
+
+}
+
+.header_burger{
+    display: flex;  
+    flex-direction: row;
+    margin-left:100px;
+    margin-bottom: -120px;
+    background-color: #7D0505;
+}
+
+
+
+.login {
+    font-size: 1.3rem;
+    color: black;
+    display: inline-block;
+    padding: 2px 4px;
+    border: 1px solid black;
+    margin-bottom: 150px; 
+    border-radius: 10px;  
+
+}
+
+.signup{
+    font-size: 1.3rem;
+    color: black;
+    display: inline-block;
+    padding: 2px 4px;
+    border: 1px solid black;
+    margin-bottom: 150px; 
+    border-radius: 10px;
+    
+}
+a.burger  {
+    font-size: 0.5em;
+    color: black;
+
+}
+
+button {
+    background-color: #7D0505;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: #FFF;
+    text-shadow: 0 0 5px , 0 0 10px , 0 0 15px , 0 0 20px #FFF, 0 0 30px , 0 0 40px , 0 0 55px , 0 0 75px ;
+    text-transform: uppercase;
+    text-transform: initial;
+    text-align: center;
+    transform: scale(2.0); 
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 30px;
+    font-size: 1.3rem;
+
+}
+
+p.slogan {
+
+    color: black;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 0.3rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+    text-shadow: 0 0 5px #82fafa, 0 0 10px #82fafa, 0 0 15px #82fafa, 0 0 20px #82fafa, 0 0 30px #82fafa, 0 0 40px #82fafa, 0 0 55px #82fafa, 0 0 75px #82fafa;
+    transform: scale(3.0);
+    display: flex;
+    margin: 33%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.main_body_card{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+
+
+    
+}
+
+.promotion_card{
+    border: 1px black solid;
+    text-align: center;
+    text-align: start;
+    height: 130px;
+    width: 100px;
+    color: yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+.btn_download{
+    border: 1px black solid;
+    text-align: center;
+    color: white;
+    height: 130px;
+    width: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.social_links{
+    display: flex;
+    gap: 15px;
+    
+}
