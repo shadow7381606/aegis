@@ -1,4 +1,4 @@
-@import './styles/colors.css';
+@import "./styles/colors.css";
 
 /* --------reset css */
 *,
@@ -10,7 +10,6 @@
   text-decoration: none;
   box-sizing: inherit;
   color: inherit;
-  
 }
 html,
 body {
@@ -49,7 +48,7 @@ main {
   padding-left: 15px;
 }
 
-.header_button_container{
+.header_button_container {
   display: flex;
   flex-direction: row;
   margin-left: 100px;
@@ -139,8 +138,8 @@ p.slogan {
   height: 130px;
   width: 100px;
   color: yellow;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
-
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .main_body_card {
   display: flex;
@@ -158,6 +157,8 @@ p.slogan {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: slide-in-left 3s ease forwards;
+  animation-delay: 0.1s;
 }
 
 .btn_download {
@@ -169,17 +170,41 @@ p.slogan {
   color: white;
   height: 130px;
   width: 100px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande","Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  animation: slide-in-right 3s ease forwards;
+  animation-delay: 0.3s;
 }
-.download_app{
-    color: white;
+.download_app {
+  color: white;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .social_links_container {
   display: flex;
   gap: 20px;
 }
-
 
 .legal_mention_container {
   display: flex;
@@ -188,9 +213,6 @@ p.slogan {
   padding: 1rem 0;
   color: black;
 }
-
-
-
 
 p.slogan {
   text-align: center;
